@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- สูตรที่ 1 -->
+    <h1 style="color:#00dfc4 ;"> คำนวณตัวแปรฟิสิกส์เรื่องแก๊สอุดมคติ สูตรที่ 1</h1>
+    <h2 style="color:#00dfc4 ;">สูตร PV = nRT</h2>
+    <h2 style="color:#00dfc4 ;">หา P(ความดัน) :</h2>
+
+    <!-- ส่วนของช่องใส่ค่า -->
+    <div class="inputrV">
+        <input id="rV" type="text" required="required">
+        <span>ใส่ V(ปริมาตร)</span>
+    </div><br>
+
+    <div class="inputrV">
+        <input id="rn" type="text" required="required">
+        <span>ใส่ n(ปริมาณแก๊สทั้งหมด)</span>
+    </div><br>
+
+    <div class="inputrV">
+        <input id="rT" type="text" required="required">
+        <span>ใส่ T(อุณหภูมิ เคลวิน)</span>
+    </div><br>
+
+    <!-- ส่วนของปุ่มคำสั่ง -->
+    <button class="button" onclick="resP(total)">คำนวณหา P(ความดัน)</button>
+    <h2 style="color:#00dfc4 ;"> ผลลัพธ์</h2>
+
+    <!-- ส่วนของช่องผลลัพธ์ -->
+    <div class="inputrV">
+        <input id="total" type="text" required="required">
+        <span> หน่วย N/m ²</span>
+    </div>
+    <br>
+    </div>
+
+    <!-- สูตรที่ 2 -->
+    <h1 style="color:#00dfc4 ;"> คำนวณตัวแปรฟิสิกส์เรื่องแก๊สอุดมคติ สูตรที่ 2 </h1>
+    <h2 style="color:#00dfc4 ;">สูตร PV = N kB T</h2>
+    <h2 style="color:#00dfc4 ;">หา P(ความดัน) :</h2>
+
+    <!-- ส่วนของช่องใส่ค่า -->
+    <div class="inputrV">
+        <input id="rV1" type="text" required="required">
+        <span>ใส่ V(ปริมาตร)</span>
+    </div><br>
+
+
+    <div class="inputrV">
+        <input id="rN1" type="text" required="required">
+        <span>ใส่ N(จำนวนโมเลกุลของแก๊สทั้งหมด)</span>
+    </div><br>
+
+    <div class="inputrV">
+        <input id="rT1" type="text" required="required">
+        <span>ใส่ T(อุณหภูมิ เคลวิน)</span>
+    </div><br>
+
+    <!-- ส่วนของปุ่มคำสั่ง -->
+    <button class="button" onclick="resP1(total1)">คำนวณหา P(ความดัน)</button>
+    <h2 style="color:#00dfc4 ;"> ผลลัพธ์</h2>
+
+    <!-- ส่วนของช่องผลลัพธ์ -->
+    <div class="inputrV">
+        <input id="total1" type="text" required="required">
+        <span> หน่วย N/m ²</span>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* ตกแต่งโดยร่วม */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+    font-family: 'Kanit', sans-serif;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #00dfc4;
+}
+
+.title {
+    color: #00dfc4;
+}
+
+/* ตกแต่งปุ่มใส่ค่า */
+.inputrV {
+    position: relative;
+    width: 250px;
+}
+
+.inputrV input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputrV span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputrV input:valid~span,
+.inputrV input:focus~span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputrV:nth-child(2) input:valid~span,
+.inputrV:nth-child(2) input:focus~span {
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+
+}
+
+.inputrV input:valid,
+.inputrV input:focus {
+    border: 1px solid #00dfc4;
+}
+
+/* ตกแต่งปุ่มคำสั่ง */
+.button {
+    background-color: #00dfc4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button {
+    background-color: white;
+    color: #1d2b3a;
+    border: 2px solid #00dfc4;
+    font-family: 'Kanit', sans-serif;
+    border-width: 5px;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 12px;
+}
